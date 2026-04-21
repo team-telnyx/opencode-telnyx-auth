@@ -113,6 +113,12 @@ Some smaller models cannot fit OpenCode's full tool list and system prompt into 
 <details>
 <summary>Agent notes (humans can ignore)</summary>
 
+- local build/install commands assume `bun` is installed
+- package manager is `bun`; use `bun install`, `bun run build`, and `bun run typecheck`
+- runtime dependency is `@opencode-ai/plugin`
+- local build-time dependencies are `typescript` and `@types/node`
+- OpenCode loads the built plugin from `dist/`, so cloning the repo alone is not enough; it must be built first
+- a valid Telnyx API key is required either via `TELNYX_API_KEY` or `opencode auth login`
 - provider id is `telnyx`
 - auth hook method is `API Key`
 - auth precedence is env first, then stored auth.json key
