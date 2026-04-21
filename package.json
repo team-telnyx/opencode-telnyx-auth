@@ -5,10 +5,9 @@
   "private": true,
   "type": "module",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": ["dist", "README.md"],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "bun build src/index.ts --outdir dist",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
