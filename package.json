@@ -2,7 +2,17 @@
   "name": "opencode-telnyx-auth",
   "description": "Telnyx auth and provider plugin for OpenCode",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
+  "packageManager": "bun@1",
+  "homepage": "https://github.com/team-telnyx/opencode-telnyx-auth#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-telnyx/opencode-telnyx-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-telnyx/opencode-telnyx-auth/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "files": ["dist", "README.md"],
