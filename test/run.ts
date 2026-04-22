@@ -319,7 +319,7 @@ function formatStatus(result: ProbeResult): string {
 }
 
 function extractFailureNote(output: string, exitCode: number | null): string | undefined {
-  const detailMatch = output.match(/"detail":\s*"((?:\\.|[^"])*)"/)
+  const detailMatch = output.match(/"detail":\s*"([^"\\]*(?:\\.[^"\\]*)*)"/)
   if (detailMatch) return detailMatch[1].replaceAll('\\"', '"')
 
   const titleMatch = output.match(/"title":\s*"([^"]+)"/)
