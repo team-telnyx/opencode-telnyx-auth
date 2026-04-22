@@ -22,3 +22,6 @@ coverage/
 auth.json
 credentials.json
 *.local
+
+test/.artifacts/
+config.json
